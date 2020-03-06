@@ -1,10 +1,13 @@
-name = 'unknown'
+from orphan import orphan
 
 def intro():
+    global name
     name = input("Who is this child? ")
-    claim(name)
 
-def claim(name):
+def claim():
+    global name
     print("Welcome to the family, " + name + " Skywalker.")
 
+#driver
 intro()
+claim()
